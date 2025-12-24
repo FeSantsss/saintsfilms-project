@@ -1,0 +1,12 @@
+/* Fonts */
+@font-face {
+  font-family: 'Sora';
+  src: url(fonts/Sora-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+}
+
+
