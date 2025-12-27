@@ -111,10 +111,19 @@ header {
 .container-hero{
   background: var(--gradient-white-premium);
   text-align: center;
-  padding: var(--space-extreme-lg) var(--space-md);
+  padding: var(--space-extreme-lg) var(--space-md) var(--space-lg);
   max-width: 900px auto;
   margin: 0;
 }
+
+.container-lastsection-black{
+  background: var(--gradient-perfect-blackgray);
+  padding: var(--space-lg) var(--space-md) var(--space-lg) var(--space-md);
+  max-width: 900px auto;
+  text-align: center;
+}
+
+
 
 
 
@@ -186,8 +195,7 @@ cursor: pointer;
 .p-global {
   font-family: var(--font-primary);
   font-size: clamp(0.8rem, 3vw, 1rem);
-  margin: var(--space-md) 0px 0px;
-  overflow: hidden;
+  margin: var(--space-lg) 0px 0px;
   line-height: 1.5;
   word-wrap: break-word;
   transition: 0.2s;
@@ -205,9 +213,9 @@ cursor: pointer;
   font-family: var(--font-primary);
   color: var(--white-main);
   font-weight: 700;
-  font-size: clamp(1.7rem, 5vw, 4rem);
+  font-size: clamp(1.7rem, 7vw, 4rem);
   line-height: 1.25;
-  margin-top: 35px;
+  margin-top: 20px;
   margin-bottom: 12px;
 }
 
