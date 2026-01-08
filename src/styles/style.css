@@ -17,35 +17,28 @@
 
 header {
   background-color: #ffffff;
-  width: 100%;
-  height: 100%;
-
   position: sticky;
   top: 0;
   z-index: 1000;
-  
 }
-
 
 .container-header {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 80px;
-  
-  padding: 0px var(--space-md);
+  grid-template: 80px / repeat(2, auto);
+
+  padding: .6vw 4vw;
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1100px;
-  min-width: 320px;
+  
   margin: auto;
 }
 
 .logo-icon-saints {
-  width: 80px;
+  width: 90px;
 }
 
-.burguer-menu{
+.burguer-menu {
   display: none;
 }
 
@@ -66,13 +59,11 @@ header {
 
     background: #ffffffde;
 
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-    border: 1px solid rgba(255,255,255,0.08);
-
-    box-shadow:
-      0 12px 40px rgba(0,0,0,0.18);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
   }
-  
+
   .nav-header-menu.is-open {
     display: flex;
   }
@@ -82,13 +73,7 @@ header {
   }
 }
 
-
-
-
-
-
 /* Seções abaixo do menu */
-
 
 .container-main {
   background: var(--gradient-perfect-blackgray);
@@ -98,17 +83,15 @@ header {
   margin: 0 auto;
 }
 
-
-.container-second-main{
+.container-second-main {
   background: var(--gradient-white-premium);
   text-align: center;
   padding: var(--space-lg) var(--space-md) var(--space-lg) var(--space-md);
   max-width: 900px auto;
   margin: 0;
-  
 }
 
-.container-hero{
+.container-hero {
   background: var(--gradient-white-premium);
   text-align: center;
   padding: var(--space-extreme-lg) var(--space-md) var(--space-lg);
@@ -116,24 +99,19 @@ header {
   margin: 0;
 }
 
-.container-lastsection-black{
+.container-lastsection-black {
   background: var(--gradient-perfect-blackgray);
   padding: var(--space-lg) var(--space-md) var(--space-lg) var(--space-md);
   max-width: 900px auto;
   text-align: center;
 }
 
-
-
-
-
 .h3-announce-area-white {
-  font-family: var(--font-primary); 
+  font-family: var(--font-primary);
   color: var(--black-soft);
   font-weight: var(--font-bold);
   font-size: clamp(1.7rem, 5vw, 4rem);
   line-height: 1.25;
-
 }
 
 /***
@@ -154,12 +132,9 @@ e melhorar SEO
   font-weight: var(--font-extralight);
   font-size: clamp(2rem, 6vw, 3.5rem);
   line-height: 1.25;
-  transition: 
-    ease 0.4s
-  ;
+  transition: ease 0.4s;
   transition-behavior: smooth;
 }
-
 
 .h2-slogan-2 {
   font-family: var(--font-primary);
@@ -185,11 +160,12 @@ e melhorar SEO
   padding: 0;
   scrollbar-color: var(--gray-disabled) var(--white-main);
   scrollbar-width: thin;
-  
 }
 
-a, button, .burguer-menu {
-cursor: pointer;
+a,
+button,
+.burguer-menu {
+  cursor: pointer;
 }
 
 .p-global {
@@ -205,7 +181,7 @@ cursor: pointer;
 
 .p-normal {
   font-family: var(--font-primary);
-  font-weight: 200; 
+  font-weight: 200;
   width: 70%;
 }
 
@@ -235,19 +211,16 @@ cursor: pointer;
   text-wrap: balance;
 }
 
-
-
 .container-flex-videos-vertical {
   width: 100%;
-  max-width: 3500px; 
+  max-width: 3500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 66px;
   margin-top: 50px;
   border-radius: 5px;
 }
-
 
 .video-flex-vertical {
   border: 1px solid black;
@@ -258,11 +231,11 @@ cursor: pointer;
   transition: 0.5s;
   cursor: pointer;
 }
-.video-flex-vertical:hover{
+.video-flex-vertical:hover {
   box-shadow: 5px 5px 55px rgba(255, 255, 255, 0.264);
 }
 
-.video-description{
+.video-description {
   font-family: var(--font-primary);
   margin-top: 10px;
   font-weight: var(--font-regular);
@@ -273,21 +246,19 @@ cursor: pointer;
   max-width: 250px;
 }
 
-
-
 .container-flex-videos-horizontal {
   width: 100%;
-  max-width: 3000px; 
+  max-width: 3000px;
   gap: 40px;
   margin-top: 50px;
   border-radius: 5px;
-  
+
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; 
+  align-items: center;
 }
 
-.video-horizontal-card{
+.video-horizontal-card {
   width: 100%;
   flex-shrink: 1;
   max-width: 800px;
@@ -304,34 +275,24 @@ cursor: pointer;
   border-radius: 5px;
 }
 
-.announce-info-h3{
+.announce-info-h3 {
   color: var(--white-other);
   font-family: var(--font-primary);
   font-weight: var(--font-regular);
   margin-top: 40px;
 }
 
-
-
-
-
-
-
 .toggle-contact {
   display: none;
 }
-
 
 .ul-global {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-4px);
-  transition:
-    height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.25s ease,
+  transition: height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease,
     transform 0.25s ease;
 }
-
 
 .ul-global.is-open {
   opacity: 1;
@@ -353,7 +314,7 @@ Botão de ação dos contatos
 .link-external {
   font-family: var(--font-primary);
   text-decoration: none;
-  color: var(--black-deep) ;
+  color: var(--black-deep);
   font-weight: var(--font-extralight);
   margin: 5px;
   font-size: clamp(0.9rem, 3vw, 1rem);
@@ -362,46 +323,44 @@ Botão de ação dos contatos
 }
 .link-external:hover {
   color: var(--gray-disabled);
-  transition: 0.5s; 
+  transition: 0.5s;
   transition-behavior: smooth;
 }
 
-#special{
+#special {
   font-weight: var(--font-semibold);
   width: 97%;
   color: var(--gray-disabled);
 }
-#special:hover{
+#special:hover {
   color: var(--gray-hover);
   transition: 0.3s;
 }
 
-.container-contact-footer{
+.container-contact-footer {
   padding-bottom: 15px;
 }
 
 .icon-contact {
-  width: 19px; 
+  width: 19px;
   vertical-align: middle;
 }
 
-
-
-
-
-
-
+@media (min-width: 1390px) {
+  .p-global-big {
+    padding: 0px 50vb;
+  }
+}
 
 @media (min-width: 600px) {
   .p-normal {
     font-size: clamp(0.7rem, 3.5vw, 1rem);
     transform: translate(5%, -21px);
-    position: absolute; 
+    position: absolute;
   }
 }
 
 @media (max-width: 600px) {
-
   .h2-slogan-1 {
     font-size: clamp(1.7rem, 6vw, 2.5rem);
   }
@@ -411,16 +370,15 @@ Botão de ação dos contatos
   .p-normal {
     font-size: clamp(0.7rem, 4vw, 1rem);
     transform: translate(7%, -21px);
-    position: absolute; 
+    position: absolute;
     width: 85%;
   }
 }
 
 @media (max-width: 360px) {
-
   .p-normal {
     font-size: clamp(0.6rem, 4vw, 0.9rem);
     transform: translate(10%, -21px);
-    position: absolute; 
+    position: absolute;
   }
 }
