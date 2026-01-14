@@ -126,13 +126,19 @@ function enviar() {
 const toggleChat = document.getElementById("chat-toggle");
 const chat = document.querySelector(".chat-orçamento");
 
-toggleChat.addEventListener("click", () => {
-  if (chat.classList.contains("clicked")) {
-    chat.classList.remove("clicked");
-  } else {
-    chat.classList.add("clicked");
-  }
+toggleChat.addEventListener("click", (e) => {
+  e.stopPropagation();
+  chat.classList.toggle("clicked");
 });
 
+chat.addEventListener("click", (e) => {
+  e.stopPropagation(); 
+});
+
+document.addEventListener("click", () => {
+  if (chat.classList.contains("clicked")) {
+    chat.classList.remove("clicked");
+  }
+});
 
 

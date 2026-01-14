@@ -58,7 +58,7 @@ select {
   height: 60px;
   transform: translateY(1vw);
   background-color: #121212;
-  border-radius: 4%;
+  border-radius: var(--radius-lg);  
   background-size: contain;
   cursor: pointer;
   z-index: 999;
@@ -72,7 +72,7 @@ select {
   width: 250px;
   height: 60px;
   background-color: #121212;
-  border-radius: 4%;
+  border-radius: var(--radius-lg);
   background-size: contain;
   cursor: pointer;
   z-index: 999;
@@ -142,3 +142,4 @@ input, select {
 input:focus, select:focus {
   border-color: #1c1c1c91;
 }
+
