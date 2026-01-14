@@ -83,10 +83,10 @@ header {
   }
 
   .first-line.active {
-    transform: rotate(-400deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
   }
   .second-line.active {
-    transform: rotate(400deg) translate(-1px, 1px);
+    transform: rotate(41deg) translate(-1px, 1px);
   }
 }
 
