@@ -4,7 +4,9 @@
   --black-main: #1d1d1f;      /* background or primary text */
   --black-deep: #121212;      /* more detailed sections */
   --black-soft: #2c2c2e;      /* cards, blocks, overlays */  
-  
+  --dark-footer: #151515;    /* black footer background */
+
+
   --white-main: #f5f5f7;      /* background or primary text */
   --white-soft: #d1d1d6;      /* second text */
   --white-muted: #a1a1a6;     /* subtitles */
@@ -43,6 +45,14 @@
   --radius-md: 12px;
   --radius-lg: 20px;
 
-  --font-primary: 'Sora', system-ui, sans-serif;
 
+/* Fonts */
+
+  --font-primary: 'Sora', system-ui, sans-serif;
+  --font-secondary-light: 'Every-Head-light', system-ui, sans-serif;
+  --font-secondary-regular: 'Every-Head-regular', system-ui, sans-serif;
+  --font-secondary-medium: 'Every-Head-medium', system-ui, sans-serif;
+  --font-secondary-bold: 'Every-Head-bold', system-ui, sans-serif;
+  --font-tertiary-regular: 'Merryweather-regular', serif;
+  --font-tertiary-light: 'Merryweather-light', serif;
 }

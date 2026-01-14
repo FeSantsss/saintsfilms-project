@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  
+
   margin: auto;
 }
 
@@ -74,6 +74,7 @@ header {
   }
 }
 
+
 /* Seções abaixo do menu */
 
 .container-main {
@@ -81,7 +82,7 @@ header {
   text-align: center;
   padding: var(--space-lg) var(--space-md) var(--space-lg) var(--space-md);
   max-width: 900px auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container-second-main {
@@ -152,6 +153,7 @@ e melhorar SEO
   font-size: clamp(14px, 2vw, 1rem);
   text-wrap: balance;
   margin-top: 20px;
+  color: var(--white-soft);
 }
 
 * {
@@ -194,14 +196,6 @@ button,
   line-height: 1.25;
   margin-top: 20px;
   margin-bottom: 12px;
-}
-
-.p-global-big {
-  color: var(--white-soft);
-  font-family: var(--font-primary);
-  font-size: clamp(14px, 2vw, 1rem);
-  text-wrap: balance;
-  margin-top: 20px;
 }
 
 .announce-info-p-white {

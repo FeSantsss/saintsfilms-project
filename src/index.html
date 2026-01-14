@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="saints-ui/foundation/components/footer/footer-base.css"
     />
+    <link rel="stylesheet" href="style-chat.css" />
 
     <link
       rel="shortcut icon"
@@ -90,14 +91,33 @@
       </section>
     </header>
 
+    <button id="chat-toggle" aria-label="Abrir atendimento">
+      <p id="p-in-chat-toggle">Agende seu projeto</p>
+    </button>
+
+    <section class="chat-orçamento">
+      <h2 id="h2-in-chat">Crie seu Movimento</h2>
+      <div class="campo">
+        <label>Qual o tipo de serviço?</label>
+        <select id="servico">
+          <option value="">Selecione</option>
+          <option value="casamento">Casamento</option>
+          <option value="reels">Produção de Reels</option>
+          <option value="videoAereo">Vídeo Aéreo</option>
+          <option value="evento">Evento</option>
+        </select>
+      </div>
+      <form id="formulario"></form>
+      <button class="chat-btn-submit-form" onclick="enviar()">Enviar</button>
+    </section>
     <main class="container-test-main" id="home-nav">
+      
+
       <section class="container-hero">
         <h1 class="visually-primary">Produtora Audiovisual Profissional</h1>
 
         <h2 class="h2-slogan-1">Profissionais em captar</h2>
         <h2 class="h2-slogan-2">momentos únicos</h2>
-
-        <button class="saints-button">Eternize cada momento</button>
 
         <p class="p-global">qual serviço gostaria de realizar conosco?</p>
       </section>
@@ -199,8 +219,6 @@
           resume à uma rede de conversa, criando um universo entre públicos que
           consomem seus produtos.
         </p>
-
-        <button class="saints-button-dark">Crie sua história</button>
       </section>
 
       <section class="container-second-main">
@@ -259,8 +277,6 @@
           Os detalhes que você vivencia são as cenas que nós produzimos para
           transcender a felicidade em seu dia mais especial.
         </p>
-
-        <button class="saints-button">Eternize cada momento</button>
       </section>
 
       <section class="container-lastsection-black">
@@ -319,8 +335,6 @@
           Os detalhes que você vivencia são as cenas que nós produzimos para
           transcender o amor em seu dia mais especial.
         </p>
-
-        <button class="saints-button-dark">Eternize sua vida</button>
       </section>
     </main>
 
@@ -356,10 +370,7 @@
               </p>
             </li>
             <li>
-              <img
-                src="midia/images/telephone-call.png"
-                class="icon-contact"
-              />
+              <img src="midia/images/telephone-call.png" class="icon-contact" />
               <p class="p-normal">Telefone: +55 (87) 0000-0000</p>
             </li>
             <li>
@@ -379,20 +390,12 @@
           Copyright © 2024-2026 Saints Films Digital (All Right Reserved) CNPJ:
           XX.XXX.XXX/XXXX-XX - Brasil
         </p>
-      </section>-
+      </section>
+      -
     </footer>
 
     <script src="script-menu-open.js"></script>
     <script src="script-contact-menu.js"></script>
-    <script>
-      window.chtlConfig = { chatbotId: "5377734186" };
-    </script>
-    <script
-      async
-      data-id="5377734186"
-      id="chtl-script"
-      type="text/javascript"
-      src="https://chatling.ai/js/embed.js"
-    ></script>
+    <script src="script-chat.js"></script>
   </body>
 </html>
