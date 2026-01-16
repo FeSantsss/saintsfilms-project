@@ -69,6 +69,12 @@
   content: "";  
   width: 26px;
   height: 26px;
+  border-radius: 10px;
+}
+
+:focus {
+  border: none;
+  outline: none;
 }
 
 .chat-actions button {
