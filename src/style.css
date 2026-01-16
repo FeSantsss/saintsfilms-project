@@ -186,6 +186,7 @@ header {
 .carrossel-track {
   display: flex;
   transition: transform 0.5s ease;
+  touch-action: pan-x;
 }
 
 /* Controls */
