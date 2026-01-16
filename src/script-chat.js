@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function perguntarServico() {
     botMsg("Qual serviço você deseja contratar?");
-    
+
     const select = document.createElement("select");
     select.innerHTML = `
       <option value="">Selecione</option>
@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggleChat.addEventListener("click", () => {
     chat.classList.toggle("open");
+
 
     if (chat.classList.contains("open") && mensagens.children.length === 0) {
       botMsg("Olá! Bem-vindo ao atendimento da Saints");

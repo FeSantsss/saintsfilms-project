@@ -90,6 +90,29 @@ header {
   }
 }
 
+/* Scroll Bar */
+
+.scrollbar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 3px;
+  background: rgba(116, 116, 116, 0.533);
+  z-index: 1000;
+  border-radius: 50px;
+}
+
+.thumb {
+  width: 100%;
+  height: 100px;
+  background: rgb(238, 238, 238);
+  opacity: 0.6;
+  transform-origin: top;
+  z-index: 1000;
+
+}
 
 /* Seções abaixo do menu */
 
@@ -177,8 +200,11 @@ e melhorar SEO
   scroll-behavior: smooth;
   box-sizing: border-box;
   padding: 0;
-  scrollbar-color: var(--gray-disabled) var(--white-main);
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none; 
 }
 
 a,
