@@ -155,10 +155,147 @@ header {
   line-height: 1.25;
 }
 
-/***
-Para o h1 não aparecer
-e melhorar SEO
-***/
+.layout-only {
+  height: 200px;
+  background: var(--gradient-perfect-gray);
+
+}
+
+
+/* carrossel reviews */
+
+.container-reviews{
+  background: var(--gradient-perfect-grayfullblack);
+  height: 500px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrossel {
+  margin: 0 auto;
+  max-width: 1170px;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.carrossel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Controls */
+
+.dots-btn {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.12);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    opacity 0.25s ease;
+
+  opacity: 0.9;
+}
+
+
+.dots-btn:hover {
+  background-color: rgba(255, 255, 255, 0.723);
+}
+
+/* Ativo / selecionado */
+.dots-btn:checked {
+  background-color: #ffffff;
+  border-color: #ffffff;
+
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  
+
+  background: none;
+  border: none;
+  color: white;
+  font-size: 70px;
+  cursor: pointer;
+
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow.prev {
+  left: 30px;
+}
+
+.arrow.next {
+  right: 30px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
+
+
+/* Estilização do card*/
+
+.card-review {
+  display: none;
+  max-width: 500px;
+  min-width: 300px;
+  text-align: center;
+  font-family: var(--font-primary);
+}
+
+.card-review.active {
+  display: block;
+}
+
+
+.client-review-name {
+  color: var(--white-soft);
+  border-bottom: 1px solid var(--white-main);
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.client-review {
+  color: var(--white-soft);
+  font-size: 17px;
+  margin: 0px 20px
+
+}
+
+
+
+/* Depois das Sections*/
+
 
 .visually-primary {
   font-family: var(--font-primary);
