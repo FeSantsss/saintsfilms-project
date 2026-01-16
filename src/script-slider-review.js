@@ -38,7 +38,7 @@ let endX = 0;
 
 function handSwipe(){
   const distance = endX - startX;
-  const minSwipe = 20;
+  const minSwipe = 50;
 
   if (distance > minSwipe){
     prevSlide();
