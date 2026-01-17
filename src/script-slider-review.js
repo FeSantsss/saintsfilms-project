@@ -4,6 +4,7 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 
 let index = 0;
+const timeToSkip = 3000;
 
 function showSlide(i) {
   cards.forEach(card => card.classList.remove('active'));
@@ -12,6 +13,15 @@ function showSlide(i) {
   cards[i].classList.add('active');
   dots[i].checked = true;
 }
+
+const intervalSlide = setInterval(() => {
+  showSlide(index);
+  index++
+  if (index > cards.length - 1) {
+    index = 0;
+  }
+}, timeToSkip);
+
 
 next.addEventListener('click', () => {
   index = (index + 1) % cards.length;
