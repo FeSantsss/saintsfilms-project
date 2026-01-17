@@ -94,7 +94,7 @@ header {
 
 .scrollbar {
   position: fixed;
-  right: 20px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   height: 100px;
