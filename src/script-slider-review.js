@@ -4,7 +4,7 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 
 let index = 0;
-const timeToSkip = 3000;
+const timeToSkip = 5000;
 
 function showSlide(i) {
   cards.forEach(card => card.classList.remove('active'));
