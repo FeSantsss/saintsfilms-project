@@ -39,3 +39,4 @@ videos.forEach(video => {
   // DOUBLE CLICK = FULLSCREEN
   video.addEventListener("dblclick", goFullscreen);
 });
+

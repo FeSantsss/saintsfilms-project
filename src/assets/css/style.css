@@ -367,6 +367,7 @@ button,
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  
 }
 
 .video-horizontal-card {
@@ -377,6 +378,7 @@ button,
   box-shadow: 3px 3px 15px rgba(13, 13, 13, 0.332);
   border-radius: 5px;
   margin-bottom: 25px;
+
 }
 
 .video-flex-horizontal {

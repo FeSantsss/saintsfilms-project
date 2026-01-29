@@ -6,4 +6,4 @@ window.addEventListener("scroll", () => {
   const progress = scrollTop / docHeight;
 
   thumb.style.transform = `scaleY(${progress})`;
-});
+}, {passive: true});
