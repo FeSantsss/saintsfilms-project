@@ -48,11 +48,11 @@ let endX = 0;
 
 carrossel.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
-});
+}, {passive:true});
 carrossel.addEventListener("touchend", (e) => {
   endX = e.changedTouches[0].clientX;
   handSwipe();
-});
+}, {passive: true});
 
   
 function nextSlide() {
