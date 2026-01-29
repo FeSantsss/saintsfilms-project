@@ -38,7 +38,7 @@ try {
         list.hidden = true;
       }, { once: true });
     }
-  }, {passive: true});
+  });
 } catch (error) {
   alert("Ocorreu um erro ao realizar a ação - ", error);
 }

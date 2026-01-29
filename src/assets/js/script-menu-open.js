@@ -23,5 +23,5 @@ function openMenu() {
   }
 }
 
-burguer.addEventListener('click', openMenu);
+
 

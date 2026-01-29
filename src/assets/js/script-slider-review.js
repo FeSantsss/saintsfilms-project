@@ -20,25 +20,25 @@ const intervalSlide = setInterval(() => {
   if (index > cards.length - 1) {
     index = 0;
   }
-}, timeToSkip, {passive: true});
+}, timeToSkip);
 
 
 next.addEventListener('click', () => {
   index = (index + 1) % cards.length;
   showSlide(index);
-}, {passive: true});
+});
 
 prev.addEventListener('click', () => {
   index = (index - 1 + cards.length) % cards.length;
   showSlide(index);
-}, {passive: true});
+});
 
 dots.forEach((dot, i) => {
   dot.addEventListener('change', () => {
     index = i;
     showSlide(index);
   });
-}, {passive: true});
+});
 
 // Eventos do carrossel com Touch Event
 const carrossel = document.querySelector(".carrossel-track");
@@ -48,11 +48,11 @@ let endX = 0;
 
 carrossel.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
-}, {passive: true});
+});
 carrossel.addEventListener("touchend", (e) => {
   endX = e.changedTouches[0].clientX;
   handSwipe();
-}, {passive: true});
+});
 
   
 function nextSlide() {
