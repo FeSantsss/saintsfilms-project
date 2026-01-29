@@ -1,4 +1,3 @@
-// Seleciona TODOS os vídeos verticais
 const videos = document.querySelectorAll(".video");
 
 videos.forEach(video => {
@@ -10,24 +9,15 @@ videos.forEach(video => {
       if (v !== current) {
         v.pause();
         const btn = v.parentElement.querySelector(".play-btn");
-        if (btn) {
-          btn.style.opacity = "1";
-          btn.style.pointerEvents = "auto";
-        }
+        if (btn) btn.style.opacity = "1";
       }
     });
   }
 
-  function togglePlay(e) {
+  function togglePlay() {
     if (video.paused) {
       pauseAllExcept(video);
       video.play();
-
-      // FULLSCREEN — só tenta, se o navegador permitir
-      if (!document.fullscreenElement && video.requestFullscreen) {
-        video.requestFullscreen().catch(() => {});
-      }
-
       playBtn.style.opacity = "0";
       playBtn.style.pointerEvents = "none";
     } else {
@@ -37,11 +27,15 @@ videos.forEach(video => {
     }
   }
 
+  function goFullscreen() {
+    if (video.requestFullscreen) {
+      video.requestFullscreen().catch(() => {});
+    }
+  }
+
   playBtn.addEventListener("click", togglePlay);
   video.addEventListener("click", togglePlay);
 
-  video.addEventListener("ended", () => {
-    playBtn.style.opacity = "1";
-    playBtn.style.pointerEvents = "auto";
-  });
+  // DOUBLE CLICK = FULLSCREEN
+  video.addEventListener("dblclick", goFullscreen);
 });
