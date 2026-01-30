@@ -8,6 +8,12 @@ function comingSoon(){
   alert("Em produção!");
 };
 
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 
 function openMenu() {
   if (menu.classList.contains('is-open')) {
