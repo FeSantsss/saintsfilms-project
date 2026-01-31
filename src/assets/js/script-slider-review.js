@@ -43,27 +43,42 @@ dots.forEach((dot, i) => {
 // Eventos do carrossel com Touch Event
 const carrossel = document.querySelector(".carrossel-track");
 
-let startY = 0;
+let startX = 0;
+let endX = 0;
+
+
 
 carrossel.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
-  startY = e.touches[0].clientY;
-}, { passive: true });
+}, {passive:true});
+carrossel.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+  handSwipe();
+}, {passive: true});
 
-function handSwipe(){
-  const distanceX = endX - startX;
-  const distanceY = Math.abs(e.changedTouches[0].clientY - startY);
 
-  const minSwipe = 50;
 
-  if (Math.abs(distanceX) > distanceY) {
-    if (distanceX > minSwipe){
-      prevSlide();
-    } else if (distanceX < -minSwipe) {
-      nextSlide();
-    }
-  }
+
+  
+function nextSlide() {
+  index = (index + 1) % cards.length;
+  showSlide(index);
 }
 
+function prevSlide() {
+  index = (index - 1 + cards.length) % cards.length;
+  showSlide(index);
+}
+
+function handSwipe(){
+  const distance = endX - startX;
+  const minSwipe = 50;
+
+  if (distance > minSwipe){
+    prevSlide();
+  } else if (distance < -minSwipe) {
+    nextSlide();
+  }
+}
 
 showSlide(0);
