@@ -6,8 +6,8 @@ counters.forEach(counter => {
 
   const animate = () => {
     const target = +counter.dataset.target;
-    const startValue = Math.floor(target * 0.90); // começa em 75%
-    const duration = 1200;
+    const startValue = Math.floor(target * 0.95); // começa em 95%
+    const duration = 1000;
     const startTime = performance.now();
 
     isAnimating = true;
@@ -46,9 +46,9 @@ counters.forEach(counter => {
           animationFrame = null;
         }
 
-        // Reseta para 75% ao sair
+        // Reseta para 95% ao sair
         const target = +counter.dataset.target;
-        const startValue = Math.floor(target * 0.90);
+        const startValue = Math.floor(target * 0.95);
         counter.textContent = startValue.toLocaleString("pt-BR");
 
         isAnimating = false;

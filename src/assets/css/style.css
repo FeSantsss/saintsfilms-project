@@ -246,7 +246,7 @@
   margin: 150px 0px;
   justify-items: start;
   align-items: end;
-  gap: 10px;
+  gap: 20px;
 
   font-family: var(--font-primary);
 }
@@ -287,12 +287,12 @@
     -webkit-text-stroke: 1px white;
   }
   .counter{
-    font-size: 120px;
+    font-size: 100px;
 
   }
 
   .p-counter{
-    font-size: 30px;
+    font-size: 25px;
   
   }
 }
