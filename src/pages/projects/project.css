@@ -46,7 +46,7 @@ html::-webkit-scrollbar {
   background: var(--black-deep);
   color: white;
   padding: 90px 20px;
-  bottom: -10px;
+  bottom: -15px;
 
   clip-path: polygon(
     0 0, 
