@@ -38,6 +38,60 @@ html::-webkit-scrollbar {
   display: none; 
 }
 
+/*CONTEÚDO - start*/
+
+/*HERO - start*/
+.hero {
+  position: relative;
+  background: var(--black-deep);
+  color: white;
+  padding: 90px 20px;
+  bottom: -10px;
+
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% 95%, 
+    0 100%
+  );
+}
+.projects-hero-title{
+  font-family: var(--font-primary);
+  font-size: 40px;
+  letter-spacing: 1px;
+  transition: font-size 1s;
+}
+.break-title-hero{
+  display: none;
+}
+
+/*HERO - end*/
+
+
+.container-project-section{
+
+  background: var(--gradient-white-premium);
+  height: 1000px;
+}
+
+
+
+
+
+@media(min-width: 1000px){
+  .projects-hero-title{
+    font-size: 80px;
+    transition: 1s;
+    margin-left: 20px;
+  }
+  .break-title-hero{
+    display: block;
+  }
+}
+
+
+
+/*CONTEÚDO - end*/
 
 /* O BÁSICO DO FOOTER */
 
