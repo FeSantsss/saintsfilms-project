@@ -47,12 +47,14 @@ header {
   top: 30px;
   right: 24px;
   z-index: 999999;
+
 }
 
 .nav-header-menu {
   display: flex;
   gap: 20px;
 }
+
 
 @media (max-width: 760px) {
   .nav-header-menu {
@@ -68,7 +70,7 @@ header {
     z-index: 99999;
     
     background: #ffffffde;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(85px);
     transition: 0.5s;
   }
 
@@ -87,7 +89,7 @@ header {
   .burguer-menu div {
     width: 32px;
     height: 2px;
-    background: var(--black-deep);
+    background: var(--gray-disabled);
     margin: 8px;
     cursor: pointer;
     transition: 0.5s;
@@ -96,9 +98,11 @@ header {
   .first-line.active {
     transform: rotate(-41deg) translate(-7px, 7px) scale(115%);
     transition: 0.5s;
+    background: var(--black-deep);
   }
   .second-line.active {
     transform: rotate(41deg) translate(-1px, 1px) scale(115%);
     transition: 0.5s;
+    background: var(--black-deep);
   }
 }
