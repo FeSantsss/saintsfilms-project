@@ -1,5 +1,12 @@
 /* Fonts */
 
+/* Font Libre Basker */
+@font-face {
+  font-family: 'libre';
+  src: url(fonts/LibreBaskerville-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
 /* Font SORA */
 
 @font-face {

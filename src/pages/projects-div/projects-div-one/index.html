@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Case Pedala Custódia | Saints Films</title>
+  <link rel="shortcut icon" href="/src/midia/images/saints-logo.png" type="image/x-icon" />
+  <meta property="og:title" content="Saints Films | Produtora Audiovisual" />
+  <meta property="og:description" content="Produtora de altíssimo nível audiovisual, nós damos vida ás suas ideias." />
+  <meta property="og:image" content="midia/images/saints-logo.png" />
+  <meta property="og:url" content="https://saintsfilms.vercel.app" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "website",
+      "name": "Saints Films",
+      "image": "https://saints-films.vercel.app/midia/images/saints-logo.png",
+      "url": "https://saints-films.vercel.app/about",
+      "position": "1",
+      "sameAs": ["https://www.instagram.com/saintsfilmsbr"],
+      "address": {
+        "addressCountry": "BR"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="/src/saints-ui/foundation/components/footer/footer-base.css" />
+  <link rel="stylesheet" href="/src/assets/css/style-chat.css"/>
+  <link rel="stylesheet" href="/src/saints-ui/foundation/base.css" />
+  <link rel="stylesheet" href="/src/saints-ui/foundation/tokens.css" />
+  <link rel="stylesheet" href="/src/assets/css/style-header.css">
+  <link rel="stylesheet" href="project-one.css">
+</head>
+<body>
+
+  <div class="scrollbar">
+    <div class="thumb"></div>
+  </div>
+
+  <header>
+    <section class="container-header">
+      <a href="index.html"><img class="logo-icon-saints" src="/src/midia/images/saints-logo.png" alt="logo saints"
+        loading="lazy" /></a>
+        
+        <div class="burguer-menu" onclick="openMenu()">
+          <div class="first-line"></div>
+          <div class="second-line"></div>
+        </div>
+
+      <nav class="nav-header-menu">
+        <a class="link-interno" href="/index.html" target="_parent" rel="noopener noreferrer">início</a>
+        <a class="link-interno" href="/src/pages/projects/index.html" target="_parent" rel="noopener noreferrer">projetos</a>
+        <a class="link-interno" href="index.html" target="_parent" rel="noopener noreferrer"><u>serviços</u></a>
+        <a class="link-interno" href="/src/pages/about/index.html" target="_parent" rel="noopener noreferrer">sobre</a>
+      </nav>
+    </section>
+  </header>
+
+  <button id="chat-toggle" aria-label="Abrir atendimento">
+    <p id="p-in-chat-toggle">Agende seu projeto</p>
+  </button>
+
+  <div class="chat-atendimento">
+    <div class="chat-header">
+      <span class="span-in-chat">Saints Atendimento</span>
+      <div class="chat-actions">
+        <button onClick="window.location.reload()" id="reset-chat">↺</button>
+        <button id="close-chat">✕</button>
+      </div>
+    </div>
+
+    <div id="mensagens"></div>
+    <div id="input-area"></div>
+  </div>
+
+
+
+
+  <main>
+    <section class="container-services-section">
+      <h1 class="projects-hero-title">Pedala Custódia</h1>
+    
+
+
+
+    </section>
+
+  </main>
+
+
+
+
+  <footer id="sobre">
+    <div class="container-division"></div>
+
+    <section class="container-footer" aria-labelledby="footer-contact">
+      <p class="p-global">
+        Gostaria de saber mais? Entre em contato conosco!
+      </p>
+
+      <div class="container-contact-footer">
+        <button class="contact-toggle" aria-expanded="false" aria-controls="contact-list">
+          <p class="p-global" id="special">Contatos</p>
+        </button>
+
+        <ul class="ul-global" id="contact-list" hidden>
+          <li>
+            <img src="/src/midia/images/instagram.png" class="icon-contact" />
+            <p class="p-normal">
+              Instagram:
+              <a target="_blank" class="link-external" href="https://www.instagram.com/saintsfilmsbr">
+                @saintsfilmsbr
+              </a>
+            </p>
+          </li>
+          <li>
+            <img src="/src/midia/images/telephone-call.png" class="icon-contact" />
+            <p class="p-normal">Telefone: +55 (87) 0000-0000</p>
+          </li>
+          <li>
+            <img src="/src/midia/images/mail.png" class="icon-contact" />
+            <p class="p-normal">Email: saintsfilmsbr@saints.com</p>
+          </li>
+          <li>
+            <img src="/src/midia/images/location.png" class="icon-contact" />
+            <p class="p-normal">Endereço: Custódia-PE (Brasil)</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-division"></div>
+
+      <p id="p-direitosreserv">
+        Copyright © 2024-2026 Saints Films Digital (All Right Reserved) CNPJ:
+        XX.XXX.XXX/XXXX-XX - Brasil
+      </p>
+    </section>
+    -
+  </footer>
+  
+
+  <script src="/src/assets/js/script-chat.js"></script>
+  <script src="/src/assets/js/script-contact-menu.js"></script>
+  <script src="/src/assets/js/script-menu-open.js"></script>
+  <script src="/src/assets/js/script-scrollbar.js"></script>
+</body>
+</html>
